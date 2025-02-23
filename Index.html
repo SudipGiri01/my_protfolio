@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sudip Giri- Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Hero Section -->
+    <!-- Hero Section -->
+<section class="hero">
+    <!-- Particle Animation Background -->
+    <div id="particles-js"></div>
+    <div class="container">
+        <img src="web.jpg" alt="SudipGiri" class="profile-img floating">
+        <h1 class="fade-in">SudipGiri</h1>
+        <p class="tagline fade-in">Dream Big. Build Bold. Repeat.</p>
+        <p class="subtext fade-in">Turning Dreams into Reality Through Innovation</p>
+        <div class="bio-card fade-in">
+            <p class="bio">
+                Welcome! I’m <strong>Sudip Giri</strong>, a <strong>problem-solving enthusiast</strong> with a passion for turning ideas into reality. 
+                From <strong>building drones</strong> to <strong>representing Nepal in NASA's Galactic Problem Solver Challenge</strong>, 
+                I’ve always pushed the boundaries of innovation. As a <strong>district topper in Class 12 Science(NEB) </strong>, 
+                I’ve proven my dedication to excellence in academics and beyond. 
+                Currently, I’m on an exciting journey to master <strong>AI/ML and Data Science</strong>, 
+                while inspiring the next generation as a <strong>dedicated home tutor in Science and Math</strong>. 
+                Let’s connect and create something extraordinary!
+            </p>
+        </div>
+        <!-- Scroll Indicator -->
+        <div class="scroll-indicator fade-in">
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </div>
+</section>
+            <!-- Scroll Indicator -->
+            <div class="scroll-indicator fade-in">
+                <i class="fas fa-chevron-down"></i>
+            </div>
+        </div>
+    </section>
+
+    <!-- Highlights Section -->
+    <section class="highlights">
+        <div class="container">
+            <h2 class="fade-in">Highlights</h2>
+            <div class="grid">
+                <!-- Top Row: Most Attractive Achievements -->
+                <div class="card">
+                    <i class="fas fa-trophy"></i>
+                    <h3>District Topper</h3>
+                    <p>🏆 Topped Class 12 Science in Kavrepalanchok.</p>
+                </div>
+                <div class="card">
+                    <i class="fas fa-rocket"></i>
+                    <h3>NASA Challenge</h3>
+                    <p>🚀 Represented Nepal in NASA's Galactic Problem Solver.</p>
+                </div>
+                <div class="card">
+                    <i class="fas fa-robot"></i>
+                    <h3>Robotics</h3>
+                    <p>🤖 Won 4 trophies in robotics competitions.</p>
+                </div>
+
+                <!-- Bottom Row: Education, Tutoring, Skills -->
+                <div class="card">
+                    <i class="fas fa-graduation-cap"></i>
+                    <h3>Education</h3>
+                    <ul>
+                        <li>B.Sc. CSIT - Patan Multiple Campus (2023 - Present)</li>
+                        <li>+2 Science - Nepal Police School (GPA: 3.88)</li>
+                        <li>SEE - Nepal Police School (GPA: 3.85)</li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <i class="fas fa-chalkboard-teacher"></i>
+                    <h3>Tutoring Experience</h3>
+                    <p>📚 Home tutor for Class 9 and Class 10 students in Science & Math.</p>
+                </div>
+                <div class="card">
+                    <i class="fas fa-cogs"></i>
+                    <h3>Skills</h3>
+                    <ul>
+                        <li>✅ Problem Solving</li>
+                        <li>✅ Robotics & Drone Development</li>
+                        <li>✅ Aspiring to learn AI/ML & Data Science</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Social Media Links -->
+    <section class="social">
+        <div class="container">
+            <h2 class="fade-in">Connect With Me</h2>
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/sudip-giri-89a319296" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/GiriSudip" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://www.instagram.com/_sudip_giri_/" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.youtube.com/@sudipgiri-2060" target="_blank"><i class="fab fa-youtube"></i></a>
+                <a href="mailto:mr.sudip.giri.2005@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- JavaScript for Scroll Animations -->
+    <script>
+        // Function to add animation classes
+        const animateOnLoad = () => {
+            const elements = document.querySelectorAll('.fade-in');
+            elements.forEach((element, index) => {
+                setTimeout(() => {
+                    element.classList.add('visible');
+                }, index * 300); // Staggered delay for each element
+            });
+        };
+
+        // Trigger animations on page load
+        window.addEventListener('load', animateOnLoad);
+
+        // Scroll-triggered animations for cards
+        const cards = document.querySelectorAll('.card');
+
+        const observer = new IntersectionObserver(
+            (entries) => {
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                    }
+                });
+            },
+            { threshold: 0.5 } // Trigger when 50% of the element is visible
+        );
+
+        cards.forEach((card) => {
+            observer.observe(card);
+        });
+    </script>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script>
+        particlesJS.load('particles-js', 'particles.json', function() {
+            console.log('Particles.js loaded!');
+        });
+    </script>
+</body>
+</html>

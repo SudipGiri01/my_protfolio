@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header Section -->
+        <header>
+            <img src="your-photo.jpg" alt="Your Name" class="profile-img">
+            <h1>Your Name</h1>
+            <p class="tagline">Aspiring AI/ML Enthusiast | Robotics & Drone Developer | Educator</p>
+        </header>
+
+        <!-- About Me Section -->
+        <section id="about">
+            <h2>About Me</h2>
+            <p>
+                I'm an aspiring AI/ML enthusiast with a strong background in science, problem-solving, and education. 
+                I have participated in robotics competitions, built drones, and represented Nepal in NASA's Galactic Problem Solver challenge. 
+                Currently, I'm on a journey to master AI/ML while continuing to teach and inspire students in Science and Math.
+            </p>
+        </section>
+
+        <!-- Education Section -->
+        <section id="education">
+            <h2>Education</h2>
+            <ul>
+                <li><strong>Patan Multiple Campus</strong> - B.Sc. CSIT (Dec 2023 - Present)</li>
+                <li><strong>Nepal Police School</strong> - High School, Physical Sciences (Jul 2020 - Aug 2023, GPA: 3.88)</li>
+                <li><strong>Nepal Police School</strong> - Secondary Education (Apr 2015 - Mar 2020, GPA: 3.85)</li>
+            </ul>
+        </section>
+
+        <!-- Projects & Achievements Section -->
+        <section id="projects">
+            <h2>Projects & Achievements</h2>
+            <ul>
+                <li><strong>NASA Galactic Problem Solver - 2022</strong>: Represented Nepal in NASA's Earth & Space Science Challenge.</li>
+                <li><strong>Making a Drone</strong>: Developed a functional drone using a Flysky six-channel transmitter, APM power module, and APM 2.8 flight controller.</li>
+                <li><strong>Robotics Club Competitions</strong>: Won 4 trophies in robotics competitions, working on game simulations and military drone technology.</li>
+            </ul>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience">
+            <h2>Experience</h2>
+            <ul>
+                <li><strong>Home Tutor | Science & Math Educator (2023 - Present)</strong>: Teaching Class 9 and Class 10 students in Science & Math.</li>
+            </ul>
+        </section>
+
+        <!-- Honors & Awards Section -->
+        <section id="awards">
+            <h2>Honors & Awards</h2>
+            <ul>
+                <li>🏆 <strong>+2 Science Board Topper - 2079</strong> (Issued by Nepal Examination Board, Aug 2023)</li>
+                <li>🏆 <strong>NASA Galactic Problem Solver - 2022</strong> (NASA International Space Apps Challenge)</li>
+            </ul>
+        </section>
+
+        <!-- Skills & Interests Section -->
+        <section id="skills">
+            <h2>Skills & Interests</h2>
+            <ul>
+                <li>✅ Strong Mathematics & Problem-Solving Skills</li>
+                <li>✅ Science & Technology Enthusiast</li>
+                <li>✅ Robotics & Drone Development</li>
+                <li>✅ Teaching & Knowledge Sharing</li>
+                <li>📌 Learning AI/ML & Data Science</li>
+            </ul>
+        </section>
+
+        <!-- Social Media Links -->
+        <section id="social">
+            <h2>Connect With Me</h2>
+            <div class="social-links">
+                <a href="your-linkedin-link" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="your-github-link" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="your-instagram-link" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="your-youtube-link" target="_blank"><i class="fab fa-youtube"></i></a>
+                <a href="mailto:your-email@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
